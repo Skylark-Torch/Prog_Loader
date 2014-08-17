@@ -176,14 +176,14 @@ namespace Prog_Loader
                     checkBoxSteam.Checked == true &&
                     checkBoxAMDGE.Checked == true &&
                     checkBoxGyazo.Checked == true &&
-                    checkBoxMouseWithoutBorders.Checked == true &&
+                    checkBoxGitHub.Checked == true &&
                     checkBoxChrome.Checked == true)
                 {
                     checkBoxRazerSynapse.Checked = false;
                     checkBoxSteam.Checked = false;
                     checkBoxAMDGE.Checked = false;
                     checkBoxGyazo.Checked = false;
-                    checkBoxMouseWithoutBorders.Checked = false;
+                    checkBoxGitHub.Checked = false;
                     checkBoxChrome.Checked = false;
                 }
                 else
@@ -192,7 +192,7 @@ namespace Prog_Loader
                     checkBoxSteam.Checked = true;
                     checkBoxAMDGE.Checked = true;
                     checkBoxGyazo.Checked = true;
-                    checkBoxMouseWithoutBorders.Checked = true;
+                    checkBoxGitHub.Checked = true;
                     checkBoxChrome.Checked = true;
                 }
             }
@@ -395,18 +395,17 @@ namespace Prog_Loader
                 }
             }
             //CheckBoxes
-            //
-            if (checkBoxMouseWithoutBorders.Checked == true)
+            if (checkBoxGitHub.Checked == true)
             {
                 try
                 {
                     Process proc = new Process();
-                    proc.StartInfo.FileName = @"NULL";
+                    proc.StartInfo.FileName = @"D:\Users\Stephen\Desktop\Programs\GitHub.appref-ms";
                     proc.Start();
                 }
                 catch
                 {
-                    MessageBox.Show("MouseWithoutBorders -- NOT FOUND!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                    MessageBox.Show("GitHub -- NOT FOUND!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 }
             }
             //CheckBoxes
@@ -556,7 +555,7 @@ namespace Prog_Loader
 
         }
 
-        private void checkBoxMouseWithoutBorders_CheckedChanged(object sender, EventArgs e)
+        private void checkBoxGitHub_CheckedChanged(object sender, EventArgs e)
         {
 
         }

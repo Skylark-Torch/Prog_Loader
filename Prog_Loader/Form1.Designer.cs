@@ -48,7 +48,7 @@ namespace Prog_Loader
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBoxSubSync = new System.Windows.Forms.GroupBox();
             this.checkBoxChrome = new System.Windows.Forms.CheckBox();
-            this.checkBoxMouseWithoutBorders = new System.Windows.Forms.CheckBox();
+            this.checkBoxGitHub = new System.Windows.Forms.CheckBox();
             this.checkBoxGyazo = new System.Windows.Forms.CheckBox();
             this.checkBoxRazerSynapse = new System.Windows.Forms.CheckBox();
             this.checkBoxAMDGE = new System.Windows.Forms.CheckBox();
@@ -212,7 +212,7 @@ namespace Prog_Loader
             // groupBoxSubSync
             // 
             this.groupBoxSubSync.Controls.Add(this.checkBoxChrome);
-            this.groupBoxSubSync.Controls.Add(this.checkBoxMouseWithoutBorders);
+            this.groupBoxSubSync.Controls.Add(this.checkBoxGitHub);
             this.groupBoxSubSync.Controls.Add(this.checkBoxGyazo);
             this.groupBoxSubSync.Controls.Add(this.checkBoxRazerSynapse);
             this.groupBoxSubSync.Controls.Add(this.checkBoxAMDGE);
@@ -236,16 +236,16 @@ namespace Prog_Loader
             this.checkBoxChrome.UseVisualStyleBackColor = true;
             this.checkBoxChrome.CheckedChanged += new System.EventHandler(this.checkBoxChrome_CheckedChanged);
             // 
-            // checkBoxMouseWithoutBorders
+            // checkBoxGitHub
             // 
-            this.checkBoxMouseWithoutBorders.AutoSize = true;
-            this.checkBoxMouseWithoutBorders.Location = new System.Drawing.Point(6, 125);
-            this.checkBoxMouseWithoutBorders.Name = "checkBoxMouseWithoutBorders";
-            this.checkBoxMouseWithoutBorders.Size = new System.Drawing.Size(53, 17);
-            this.checkBoxMouseWithoutBorders.TabIndex = 3;
-            this.checkBoxMouseWithoutBorders.Text = "MWB";
-            this.checkBoxMouseWithoutBorders.UseVisualStyleBackColor = true;
-            this.checkBoxMouseWithoutBorders.CheckedChanged += new System.EventHandler(this.checkBoxMouseWithoutBorders_CheckedChanged);
+            this.checkBoxGitHub.AutoSize = true;
+            this.checkBoxGitHub.Location = new System.Drawing.Point(6, 125);
+            this.checkBoxGitHub.Name = "checkBoxGitHub";
+            this.checkBoxGitHub.Size = new System.Drawing.Size(59, 17);
+            this.checkBoxGitHub.TabIndex = 3;
+            this.checkBoxGitHub.Text = "GitHub";
+            this.checkBoxGitHub.UseVisualStyleBackColor = true;
+            this.checkBoxGitHub.CheckedChanged += new System.EventHandler(this.checkBoxGitHub_CheckedChanged);
             // 
             // checkBoxGyazo
             // 
@@ -429,7 +429,7 @@ namespace Prog_Loader
         private CheckBox checkBoxAMDGE;
         private CheckBox checkBoxSteam;
         private CheckBox checkBoxChrome;
-        private CheckBox checkBoxMouseWithoutBorders;
+        private CheckBox checkBoxGitHub;
 
     }
 }
